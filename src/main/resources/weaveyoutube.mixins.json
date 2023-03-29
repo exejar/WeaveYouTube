@@ -1,0 +1,7 @@
+{
+  "compatibilityLevel": "JAVA_8",
+  "package": "club.maxstats.weaveyoutube.mixin",
+  "mixins": [
+    "RendererLivingEntityMixin"
+  ]
+}
