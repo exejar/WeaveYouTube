@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.*;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.AxisAlignedBB;
 
 import static org.lwjgl.opengl.GL11.*;
@@ -33,7 +34,7 @@ public class RenderListener {
             GlStateManager.disableTexture2D();
             GlStateManager.disableLighting();
 
-            render2dBox((EntityLiving)entity, Minecraft.getMinecraft().getRenderManager(), partialTicks);
+            render2dBox((EntityLivingBase)entity, Minecraft.getMinecraft().getRenderManager(), partialTicks);
 
             GlStateManager.color(1.0F, 1.0F, 1.0F);
             GlStateManager.enableLighting();
@@ -42,7 +43,7 @@ public class RenderListener {
             glEnable(GL_DEPTH_TEST);
         }
     }
-    private void render2dBox(EntityLiving entity, RenderManager renderManager, float partialTicks) {
+    private void render2dBox(EntityLivingBase entity, RenderManager renderManager, float partialTicks) {
         glPushMatrix();
 
         AxisAlignedBB aabb = entity.getEntityBoundingBox();
