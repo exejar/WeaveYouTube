@@ -1,26 +1,19 @@
 package club.maxstats.weaveyoutube.listener;
 
-import club.maxstats.weave.loader.api.event.RenderLivingEvent;
-import club.maxstats.weave.loader.api.event.SubscribeEvent;
 import club.maxstats.weaveyoutube.event.MyCustomEvent;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.*;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.AxisAlignedBB;
+import net.weavemc.loader.api.event.SubscribeEvent;
 
 import static org.lwjgl.opengl.GL11.*;
 
 public class RenderListener {
     public static final int NPC_UUID_VERSION = 2;
     public boolean renderESP = true;
-
-//    @SubscribeEvent
-//    public void onWeaveEvent(RenderLivingEvent.Post event) {
-//        renderESP(event.getEntity(), event.getPartialTicks());
-//    }
 
     @SubscribeEvent
     public void onMyEvent(MyCustomEvent event) {

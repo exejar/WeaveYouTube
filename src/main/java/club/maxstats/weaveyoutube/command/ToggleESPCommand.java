@@ -1,6 +1,6 @@
 package club.maxstats.weaveyoutube.command;
 
-import club.maxstats.weave.loader.api.command.Command;
+import net.weavemc.loader.api.command.Command;
 import club.maxstats.weaveyoutube.listener.RenderListener;
 
 public class ToggleESPCommand extends Command {

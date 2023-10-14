@@ -1,6 +1,6 @@
 package club.maxstats.weaveyoutube.mixin;
 
-import club.maxstats.weave.loader.api.event.EventBus;
+import net.weavemc.loader.api.event.EventBus;
 import club.maxstats.weaveyoutube.event.MyCustomEvent;
 import net.minecraft.client.renderer.entity.RendererLivingEntity;
 import net.minecraft.entity.EntityLivingBase;
