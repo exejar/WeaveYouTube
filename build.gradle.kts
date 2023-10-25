@@ -1,10 +1,10 @@
 plugins {
     id("java")
-    id("com.github.weave-mc.weave") version "8b70bcc707"
+    id("com.github.weave-mc.weave-gradle") version "fac948db7f"
 }
 
 group = "club.maxstats.weaveyoutube"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     maven("https://jitpack.io")
@@ -13,8 +13,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.weave-mc:weave-loader:49fc69bb6d")
-
+    compileOnly("com.github.weave-mc:weave-loader:v0.2.4")
     compileOnly("org.spongepowered:mixin:0.8.5")
 }
 

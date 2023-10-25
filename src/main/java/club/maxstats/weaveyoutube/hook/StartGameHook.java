@@ -1,6 +1,6 @@
 package club.maxstats.weaveyoutube.hook;
 
-import club.maxstats.weave.loader.api.Hook;
+import net.weavemc.loader.api.Hook;
 import org.jetbrains.annotations.NotNull;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.*;
@@ -9,7 +9,6 @@ public class StartGameHook extends Hook {
     public StartGameHook() {
         super("net/minecraft/client/Minecraft");
     }
-
 
     /*
     * Injects System.out.println("Hello World from StartGameHook");
